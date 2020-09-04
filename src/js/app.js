@@ -22,10 +22,3 @@ class Character {
 }
 
 export default Character;
-
-const test1 = new Character(1, 10, 10, 10);
-console.log(test1);
-// Character {level: 1, attack: 10, defence: 10, health: 20}
-test1.levelup();
-console.log(test1);
-// Character {level: 2, attack: 12, defence: 12, health: 100}

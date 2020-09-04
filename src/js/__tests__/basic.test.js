@@ -15,7 +15,8 @@ describe('check class Character', () => {
   });
   test('check return Error if health = 0', () => {
     const test1 = new Character(1, 10, 10, 0);
-    const received = test1.levelup();
-    expect(received).toThrowError('Character has dead :(');
+    expect(() => {
+      test1.levelup();
+    }).toThrow();
   });
 });
